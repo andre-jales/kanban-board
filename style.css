@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #1E1E1E!important;
+}
+
+body {
+    background-color: #535353;
+}
+
+.status {
+    border: none!important;
+}
+
+.card-header {
+    background-color: #2c2c2c;
+}
+
+.coluna-kanban {
+    background: #535353!important;
+    border: none!important;
+}
+
+.task {
+    background-color: #2c2c2c;
+    margin: 5px;
+}
+
+#done .task {
+    opacity: 0.9;
+}
