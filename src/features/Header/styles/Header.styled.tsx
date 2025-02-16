@@ -5,20 +5,19 @@ export const HeaderElement = styled.header({
   gap: "1rem",
   alignItems: "center",
   padding: "1rem",
-  height: 64,
-  backgroundColor: "#222527",
-  borderBottom: "1px solid #3A3F44",
-  boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
+  height: 32,
+  backgroundColor: "#0F1214",
+  borderBottom: "1px solid #3d47514d",
 
   a: {
     textDecoration: "none",
-    color: "#D4D4D4",
+    color: "#ccc",
   },
 });
 
 export const HeaderTitle = styled.h1({
-  fontFamily: "Roboto, sans-serif",
-  color: "#D4D4D4",
+  fontFamily: "'Roboto', sans-serif",
+  fontSize: "1.5rem",
 });
 
 export const HeaderNav = styled.nav({
@@ -29,10 +28,16 @@ export const HeaderNav = styled.nav({
   },
 
   li: {
-    fontFamily: "Roboto, sans-serif",
+    fontFamily: "'Roboto', sans-serif",
+  },
+
+  a: {
+    padding: "0.5rem",
   },
 
   "& a:hover": {
-    color: "#1E90FF",
+    borderRadius: 8,
+    color: "#d4d4d4",
+    background: "#3d47514d",
   },
 });

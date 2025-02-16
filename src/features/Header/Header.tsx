@@ -9,7 +9,9 @@ const Header = () => {
       <HeaderNav>
         <ul>
           <li>
-            <a href="https://github.com/andre-jales">Github project</a>
+            <a href="https://github.com/andre-jales/kanban-board">
+              Github project
+            </a>
           </li>
         </ul>
       </HeaderNav>
