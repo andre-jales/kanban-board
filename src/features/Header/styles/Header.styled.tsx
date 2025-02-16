@@ -16,7 +16,7 @@ export const HeaderElement = styled.header({
 
     "&:hover": {
       borderRadius: 8,
-      color: "#d4d4d4",
+      color: "#eee",
       background: "#3d47514d",
     },
   },
