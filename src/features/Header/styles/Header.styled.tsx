@@ -5,7 +5,7 @@ export const HeaderElement = styled.header({
   gap: "1rem",
   alignItems: "center",
   padding: "1rem",
-  height: 32,
+  height: 40,
   backgroundColor: "#0f1214",
   borderBottom: "1px solid #3d47514d",
 
