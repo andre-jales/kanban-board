@@ -1,10 +1,13 @@
 import { useState } from "react";
 
-import { IconButton, Language, Menu, MenuItem } from "../../shared/components";
+import { IconButton, Menu, MenuItem } from "../../shared/components";
 import { EnumLanguages, setLanguage } from "../../shared/locales";
 import { useTranslate } from "../../shared/locales";
 
-import { SelectLanguageContainer } from "./styles/SelectLanguage.styled";
+import {
+  SelectLanguageContainer,
+  StyledLanguage,
+} from "./styles/SelectLanguage.styled";
 
 const SelectLanguage = () => {
   const translate = useTranslate();
@@ -26,7 +29,7 @@ const SelectLanguage = () => {
   return (
     <SelectLanguageContainer>
       <IconButton onClick={handleClick}>
-        <Language style={{ color: "#fff" }} />
+        <StyledLanguage />
       </IconButton>
       <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>
         <MenuItem onClick={() => handleLanguageChange(EnumLanguages.EN_US)}>
