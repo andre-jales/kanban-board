@@ -15,20 +15,11 @@ export const HeaderElement = styled.header({
   },
 });
 
-export const HeaderTitle = styled.h1({
-  fontFamily: "Roboto, sans-serif",
-  fontSize: "1.5rem",
-});
-
 export const HeaderNav = styled.nav({
   ul: {
     display: "flex",
     gap: "1rem",
     listStyle: "none",
-  },
-
-  li: {
-    fontFamily: "'Roboto', sans-serif",
   },
 
   a: {
