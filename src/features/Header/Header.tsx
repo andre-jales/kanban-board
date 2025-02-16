@@ -1,4 +1,5 @@
-import { translate } from "../../shared/locales";
+import { translate } from "shared/locales";
+
 import { HeaderElement, HeaderNav, HeaderTitle } from "./styles/Header.styled";
 
 const Header = () => {
