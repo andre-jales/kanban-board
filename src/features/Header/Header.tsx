@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <HeaderElement>
       <Typography variant="h5">
-        <a href="/">{translate("txtHeader.title")}</a>
+        <a href="./">{translate("txtHeader.title")}</a>
       </Typography>
       <HeaderNav>
         <ul>
