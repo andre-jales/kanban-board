@@ -7,6 +7,7 @@ export const HeaderElement = styled.header({
   padding: "1rem",
   backgroundColor: "#0f1214",
   borderBottom: "1px solid #3d47514d",
+  textAlign: "center",
 
   a: {
     textDecoration: "none",
