@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import i18next, { TOptionsBase } from "i18next";
 import NestedKeyOf from "../types/NestedKeyOf";
-import ILanguageTexts from "./ILanguageTexts";
+import ILanguageTexts from "../locales/ILanguageTexts";
 
 type $Dictionary<T = unknown> = { [key: string]: T };
 

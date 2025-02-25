@@ -7,7 +7,7 @@ import {
   Link,
   Typography,
 } from "../../shared/components";
-import { useTranslate } from "../../shared/locales/useTranslate";
+import { useTranslate } from "../../shared/hooks/useTranslate";
 
 import { ActionsContainer, HeaderContainer } from "./styles/Header.styled";
 import SelectLanguage from "./SelectLanguage";

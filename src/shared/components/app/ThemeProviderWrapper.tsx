@@ -6,14 +6,16 @@ import { ThemeContext } from "../../hooks/useTheme";
 
 const ThemeProviderWrapper = ({ children }: { children: ReactNode }) => {
   const savedMode = localStorage.getItem("themeMode") as ThemeMode | null;
-  const [mode, setMode] = useState<ThemeMode>(savedMode || "dark");
+  const [mode, setMode] = useState<ThemeMode>(savedMode || ThemeMode.Dark);
 
   useEffect(() => {
     localStorage.setItem("themeMode", mode);
   }, [mode]);
 
   const toggleTheme = () => {
-    setMode((prevMode) => (prevMode === "dark" ? "light" : "dark"));
+    setMode((prevMode) =>
+      prevMode === ThemeMode.Dark ? ThemeMode.Light : ThemeMode.Dark
+    );
   };
 
   const theme = createTheme({
