@@ -17,6 +17,7 @@ i18next.use(initReactI18next).init({
 });
 
 export const setLanguage = (language: EnumLanguages) => {
+  localStorage.setItem("language", language);
   return i18next.changeLanguage(language);
 };
 

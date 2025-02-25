@@ -4,10 +4,7 @@ import { IconButton, Menu, MenuItem } from "../../shared/components";
 import { EnumLanguages, setLanguage } from "../../shared/locales";
 import { useTranslate } from "../../shared/locales";
 
-import {
-  SelectLanguageContainer,
-  StyledLanguage,
-} from "./styles/SelectLanguage.styled";
+import { Language } from "@mui/icons-material";
 
 const SelectLanguage = () => {
   const translate = useTranslate();
@@ -27,9 +24,9 @@ const SelectLanguage = () => {
   };
 
   return (
-    <SelectLanguageContainer>
+    <>
       <IconButton onClick={handleClick}>
-        <StyledLanguage />
+        <Language />
       </IconButton>
       <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>
         <MenuItem onClick={() => handleLanguageChange(EnumLanguages.EN_US)}>
@@ -39,7 +36,7 @@ const SelectLanguage = () => {
           {translate("txtHeader.portuguese")}
         </MenuItem>
       </Menu>
-    </SelectLanguageContainer>
+    </>
   );
 };
 

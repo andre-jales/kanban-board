@@ -1,5 +1,12 @@
 import styled from "@emotion/styled";
 
+export const HeaderContainer = styled.div({
+  display: "flex",
+  gap: "1rem",
+  alignItems: "center",
+  padding: "1rem",
+});
+
 export const HeaderElement = styled.header({
   display: "flex",
   gap: "1rem",
