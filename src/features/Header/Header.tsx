@@ -1,3 +1,5 @@
+import { FC } from "react";
+
 import {
   AppBar,
   GitHub,
@@ -7,10 +9,10 @@ import {
 } from "../../shared/components";
 import { useTranslate } from "../../shared/locales/useTranslate";
 
-import { HeaderContainer } from "./styles/Header.styled";
+import { ActionsContainer, HeaderContainer } from "./styles/Header.styled";
 import SelectLanguage from "./SelectLanguage";
 
-const Header = () => {
+const Header: FC = () => {
   const translate = useTranslate();
 
   return (
@@ -21,19 +23,21 @@ const Header = () => {
             <Typography variant="h6">{translate("txtHeader.title")}</Typography>
           </Link>
 
-          <Link
-            href="https://github.com/andre-jales/kanban-board"
-            target="_blank"
-            rel="noopener noreferrer"
-            underline="none"
-            color="inherit"
-          >
-            <IconButton color="inherit">
-              <GitHub />
-            </IconButton>
-          </Link>
+          <ActionsContainer>
+            <Link
+              href="https://github.com/andre-jales/kanban-board"
+              target="_blank"
+              rel="noopener noreferrer"
+              underline="none"
+              color="inherit"
+            >
+              <IconButton color="inherit">
+                <GitHub />
+              </IconButton>
+            </Link>
 
-          <SelectLanguage />
+            <SelectLanguage />
+          </ActionsContainer>
         </HeaderContainer>
       </AppBar>
     </header>
