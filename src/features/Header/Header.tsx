@@ -11,6 +11,7 @@ import { useTranslate } from "../../shared/locales/useTranslate";
 
 import { ActionsContainer, HeaderContainer } from "./styles/Header.styled";
 import SelectLanguage from "./SelectLanguage";
+import SelectTheme from "./SelectTheme";
 
 const Header: FC = () => {
   const translate = useTranslate();
@@ -37,6 +38,8 @@ const Header: FC = () => {
             </Link>
 
             <SelectLanguage />
+
+            <SelectTheme />
           </ActionsContainer>
         </HeaderContainer>
       </AppBar>
